@@ -9,11 +9,12 @@ const outDir = resolve(__dirname, 'dist')
 export default defineConfig({
   plugins: [react()],
   root,
-  base: '/',
+  base: '/drop-in/',
   build: {
     outDir,
     emptyOutDir: true,
     rollupOptions: {
+      
       input: {
         index: resolve(root,  'index.html'),
       }

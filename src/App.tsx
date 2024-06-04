@@ -937,7 +937,7 @@ function App() {
       trigger: "#Info",
       start: "top bottom",
       end: "+=199%",
-      markers: true,
+
 
       onToggle: self => self.isActive && !scrollTween && !goingHome && goToInfo()
     });
@@ -946,7 +946,7 @@ function App() {
       trigger: "#HomeScreen",
       start: "top bottom",
       end: "+=199%",
-      markers: true,
+
 
       onToggle: self => self.isActive && !scrollTween && goToHome()
     });
