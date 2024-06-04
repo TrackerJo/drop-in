@@ -1002,7 +1002,7 @@ function App() {
       </div>
 
       <div id='merch-Circle' className={ballHasFallen ? "shown" : "hidden"} onClick={() => {
-        window.open('teepublic.com/user/the-drop-in', '_blank')
+        window.open('https://www.teepublic.com/user/the-drop-in', '_blank')
       }}>
         <img src={tee} alt="merch" className='merch-icon'/>
         <div className={instaShown ? "show-desc" : "hide-desc"}>
