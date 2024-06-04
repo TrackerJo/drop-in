@@ -13,6 +13,14 @@
 }
 
 
+.downArrow{
+  position: absolute;
+  top: 98%;
+  left: 50%;
+  height: 20px;
+}
+
+
 #Circle{
   width: 1000px;
   height: 1000px;

@@ -12,6 +12,7 @@ import instagram from './assets/insta.png'
 import yt from './assets/yt.png'
 import tiktok from './assets/tik.png'
 import tee from './assets/tee.png'
+import down from './assets/down.png'
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
     gsap.registerPlugin(ScrollTrigger)
     gsap.registerPlugin(ScrollToPlugin)
 
-    let observer = ScrollTrigger.normalizeScroll(true)
+    const observer = ScrollTrigger.normalizeScroll(true)
 
     let scrollTween: gsap.core.Tween | null = null
 
@@ -967,6 +968,7 @@ function App() {
           <h1 id='drop'>Drop</h1>
           <h1 id='in'>In</h1>
           <h1 id='podcast'>Podcast</h1>
+          <img src={down} alt="" className='downArrow' />
         </div>
     </section>
     <section id='Info'>
@@ -982,7 +984,7 @@ function App() {
       </div>
 
       <div id='yt-Circle' className={ballHasFallen ? "shown" : "hidden"} onClick={() => {
-        window.open('youtube.com/@TheDropInPodcast?si=tga44j_yoPbzKPa0', '_blank')
+        window.open('https://youtube.com/@TheDropInPodcast?si=tga44j_yoPbzKPa0', '_blank')
       }}>
         <img src={yt} alt="yt" className='yt-icon'/>
         <div className={instaShown ? "show-desc" : "hide-desc"}>
@@ -992,7 +994,7 @@ function App() {
       </div>
 
       <div id='tik-Circle' className={ballHasFallen ? "shown" : "hidden"} onClick={() => {
-        window.open('tiktok.com/@dropitef02x?_t=8hYHk9jCI6I&_r=1', '_blank')
+        window.open('https://tiktok.com/@dropitef02x?_t=8hYHk9jCI6I&_r=1', '_blank')
       }}>
         <img src={tiktok} alt="tiktok" className='tik-icon'/>
         <div className={instaShown ? "show-desc" : "hide-desc"}>
